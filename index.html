@@ -30,10 +30,11 @@
         <h1>VueJS 2</h1>
 
         <p>
-            <strong :title="presentation" v-text="name"></strong>
+            Mon prénom est {{ firstname }} et mon nom de famille est {{ lastname }}
         </p>
-
-        <button @click="change" :class="`ui small button ${classes}`">Changer</button>
+        <p>
+            Je m'appelle {{ fullname }}.
+        </p>
 
     </div>
 </div>
