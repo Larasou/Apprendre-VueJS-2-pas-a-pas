@@ -29,32 +29,11 @@
     <div id="app" class="ui container">
         <h1>VueJS 2</h1>
 
-        <table class="ui celled table">
-            <thead>
-            <tr>
-                <th>Index</th>
-                <th>Nom</th>
-                <th>Actions</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="(user, index) in users">
-                <td v-text="index"></td>
-                <td v-text="user"></td>
-                <td>
-                    <button @click="deleteUser(index)" class="ui red small button">
-                        <i class="trash icon"></i>
-                        Supprimer
-                    </button>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <p>
+            <strong :title="presentation" v-text="name"></strong>
+        </p>
 
-        <div class="ui input">
-            <input type="text" v-model="name">
-            <button @click="addUser" class="ui red button">Ajouter</button>
-        </div>
+        <button @click="change" :class="`ui small button ${classes}`">Changer</button>
 
     </div>
 </div>

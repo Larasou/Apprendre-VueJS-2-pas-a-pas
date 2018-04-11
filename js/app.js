@@ -1,16 +1,15 @@
 new Vue({
     el: '#app',
     data: {
-        name: null,
-        users: ['Sophie', 'Marc', 'Susan', 'Joe'],
+        name: 'Susan',
+        presentation: "Je m'appelle Susan",
+        classes: 'orange',
     },
     methods: {
-        addUser() {
-           this.users.push(this.name);
-           this.name = '';
-        },
-        deleteUser(index) {
-           this.users.splice(index, 1);
+        change() {
+            this.name = 'Marc';
+            this.presentation = "Je m'appelle Marc";
+            this.classes = 'green';
         }
     }
 });
