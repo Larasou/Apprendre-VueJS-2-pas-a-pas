@@ -29,43 +29,9 @@
     <div id="app" class="ui container">
         <h1>VueJS 2</h1>
 
-      <div class="ui grid">
-          <div class="three wide column">
-              <h3>Tâches</h3>
-              <div class="ui list">
-                  <div v-for="task in tasks" class="item">
-                      <i :class="task.icon"></i>
-                      <div class="content">
-                          {{ task.description }}
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="three wide column">
-              <div class="ui list">
-                  <h3>Tâches complètes</h3>
-                  <div v-for="task in completed" class="item">
-                      <i :class="task.icon"></i>
-                      <div class="content">
-                          {{ task.description }}
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="three wide column">
-              <div class="ui list">
-                  <h3>Tâches non-complètes</h3>
-                  <div v-for="task in incompleted" class="item">
-                      <i :class="task.icon"></i>
-                      <div class="content">
-                          {{ task.description }}
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+        <list>Faire a manger</list>
+        <list>Faire les courses</list>
+        <list>Faire les devoirs</list>
 
     </div>
 </div>
